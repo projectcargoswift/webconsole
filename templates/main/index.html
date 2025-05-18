@@ -3,14 +3,14 @@
 <head>  
     <meta charset="UTF-8">  
     <meta name="viewport" content="width=device-width, initial-scale=1.0">  
-    <title>Web Console</title>  
-    <link rel="stylesheet" href="/static/style.css">  
+    <title>WWRP - DEV</title>  
+    <link rel="stylesheet" href="styles.css">  
 </head>  
 <body>  
-    <h1>SwiftOS Web Console</h1>  
-    <textarea id="commandInput" placeholder="Enter your command here..."></textarea><br>  
-    <button id="sendCommand">Send Command</button>  
-    <pre id="output"></pre>  
-    <script src="/static/main.js"></script>  
+    <div class="terminal">  
+        <div class="output" id="output"></div>  
+        <input type="text" id="commandInput" placeholder="Type a command..." autofocus />  
+    </div>  
+    <script src="script.js"></script>  
 </body>  
 </html>
