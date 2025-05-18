@@ -1,4 +1,4 @@
-from webserver import start_web_server  
+from .webserver import start_web_server  # Použijte relativní import  
 
 def register_commands(command_registry):  
     """Registruje příkazy pro spuštění webové konzole."""  
