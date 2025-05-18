@@ -1,23 +1,16 @@
-<!-- /files/packages/webconsole/templates/index.html -->  
 <!DOCTYPE html>  
 <html lang="en">  
 <head>  
     <meta charset="UTF-8">  
     <meta name="viewport" content="width=device-width, initial-scale=1.0">  
     <title>Web Console</title>  
-    <style>  
-        body { font-family: Arial, sans-serif; }  
-        pre { background: #f4f4f4; padding: 10px; border-radius: 5px; }  
-    </style>  
+    <link rel="stylesheet" href="/static/style.css">  
 </head>  
 <body>  
     <h1>SwiftOS Web Console</h1>  
-    <form method="POST" action="/execute">  
-        <input type="text" name="command" placeholder="Enter command" required>  
-        <button type="submit">Execute</button>  
-    </form>  
-    
-    <h2>Output:</h2>  
-    <pre>{{ output | join('\n') }}</pre>  
+    <textarea id="commandInput" placeholder="Enter your command here..."></textarea><br>  
+    <button id="sendCommand">Send Command</button>  
+    <pre id="output"></pre>  
+    <script src="/static/main.js"></script>  
 </body>  
 </html>
